@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<body style="background-color:rgb(223, 223, 241)" , text-align="center">
+    <h2 >Welcome to the Home Page 
+        <span>&#127968;</span>
+    </h2>
+    <h1>Regex Tester</h1>
+    <form action="/results" method="post">
+        <label for="test_string">Test String:</label><br>
+        <textarea id="test_string" name="test_string" rows="4" cols="50"></textarea><br>
+        <label for="regex_pattern">Regex Pattern:</label><br>
+        <input type="text" id="regex_pattern" name="regex_pattern"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <h2>Email Validation</h2>
+    <form action="/validate_email" method="post">
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" required>
+    <button type="submit">Validate</button>
+    </form>
+
+</body>
+</html>
+

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+</head>
+<body>
+    <h1>Results</h1>
+    <p><strong>Test String:</strong> {{ test_string }}</p>
+    <p><strong>Regex Pattern:</strong> {{ regex_pattern }}</p>
+    
+    {% if matches %}
+    <h2>Matches for the given regex pattern:</h2>
+    <ul>
+        {% for match in matches %}
+            <li>{{ match }}</li>
+        {% endfor %}
+    </ul>
+        {% else %}
+    <p>No matches found.</p>
+    {% endif %}
+    
+<a href="/">Back to Home</a>    
+</body>
+</html>
