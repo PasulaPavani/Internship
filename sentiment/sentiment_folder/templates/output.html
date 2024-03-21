@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style   >
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #b0e041;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+    </style>     
+</head>
+<body>
+    <h4>Thank you for submitting your review! We greatly appreciate your valuable feedback</h4>
+    <h4>Review Details</h4>
+    <ul>
+        <li><strong>Name:</strong> {{ name }}</li>
+        <li><strong>Review:</strong> {{ review }}</li>
+    <h1> {% if prediction == 0 %}
+    
+        <h3>Thank you for the positive Review. &#128512;</h3>
+    {% elif prediction == 1 %}
+        <h5">Thank you for the negative review. Sorry for the inconvienience. &#128577;</h5>
+        
+    {% endif %}</h2>
+    <a href="/" class="btn btn-primary">Back to Input</a>
+</body>
+</html>
